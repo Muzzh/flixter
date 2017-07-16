@@ -35,6 +35,12 @@ gem 'jbuilder', '~> 2.5'
 # Bootstrap https://github.com/twbs/bootstrap-rubygem
 gem 'bootstrap', '~> 4.0.0.alpha6'
 
+# simple form
+gem 'simple_form'
+
+# devise gem https://github.com/plataformatec/devise
+gem 'devise'
+
 source 'https://rails-assets.org' do
   gem 'rails-assets-tether', '>= 1.3.3'
 end
