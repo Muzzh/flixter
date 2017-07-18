@@ -1,0 +1,13 @@
+<br />
+
+<div class="sign-box col-10 offset-1">
+  <h1>Add a new lesson</h1>
+  <br />
+  <%= simple_form_for @lesson, url: instructor_section_lessons_path(@section) do |f| %>
+    <%= f.input :title %>
+    <%= f.input :subtitle %>
+    <br /><br />
+    <%= f.submit "Add the lesson to #{@section.title}", class: 'btn btn-warning' %>
+    <br /><br />
+  <% end %>
+</div>
