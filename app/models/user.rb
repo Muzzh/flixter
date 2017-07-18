@@ -5,7 +5,7 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :trackable, :validatable
 
   attr_accessor :login
-
+  has_many :courses
 
   validates :email, presence: true, uniqueness: true
   validates_format_of :email, :with => Devise::email_regexp
