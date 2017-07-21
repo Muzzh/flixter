@@ -2,8 +2,11 @@
 <div class="sign-box col-10 offset-1">
   <h1 class="text-center"><%= current_course.title %></h1>
   <br />
+  <%= image_tag current_course.image, class: 'img-fluid' %>
+  <br />
   <%= link_to 'Preview as Student...', course_path(current_course), class: 'btn btn-secondary float-right' %>
   <br class="clr" />
+  <br />
   <div class="text-center">
     <%= link_to 'Add a new section...', new_instructor_course_section_path(current_course), class: 'btn btn-warning btn-lg' %>
   </div>

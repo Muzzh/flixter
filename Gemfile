@@ -32,12 +32,16 @@ gem 'jbuilder', '~> 2.5'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
+# fog gem for AWS 
+gem 'fog-aws'
 # Bootstrap https://github.com/twbs/bootstrap-rubygem
 gem 'bootstrap', '~> 4.0.0.alpha6'
-
+# Figaro gem https://github.com/laserlemon/figaro
+gem 'figaro'
 # simple form
 gem 'simple_form'
-
+# carrierwave for image upload https://github.com/carrierwaveuploader/carrierwave
+gem 'carrierwave', '~> 1.0'
 # devise gem https://github.com/plataformatec/devise
 gem 'devise'
 
