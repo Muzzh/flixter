@@ -42,6 +42,8 @@ gem 'figaro'
 gem 'simple_form'
 # carrierwave for image upload https://github.com/carrierwaveuploader/carrierwave
 gem 'carrierwave', '~> 1.0'
+# gem to handle ImageMagick
+gem 'mini_magick'
 # devise gem https://github.com/plataformatec/devise
 gem 'devise'
 
