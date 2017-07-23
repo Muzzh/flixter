@@ -4,7 +4,7 @@
   <h1>Add a new Section</h1>
   <br />
   <%= simple_form_for @section, url: instructor_course_sections_path(current_course) do |f| %>
-  <%= f.input :title %>
+  <%= f.input :title, required: true %>
   <br />
   <br />
   <%= f.submit "Add Section", class: 'btn btn-warning' %>

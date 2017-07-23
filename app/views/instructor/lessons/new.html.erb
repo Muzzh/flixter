@@ -4,10 +4,11 @@
   <h1>Add a new lesson</h1>
   <br />
   <%= simple_form_for @lesson, url: instructor_section_lessons_path(current_section) do |f| %>
-    <%= f.input :title %>
-    <%= f.input :subtitle %>
+    <%= f.input :title, required: true, autofocus: true %>
+    <%= f.input :subtitle, required: true %>
+    <%= f.input :video %>
     <br /><br />
-    <%= f.submit "Add the lesson to #{@section.title}", class: 'btn btn-warning' %>
+    <%= f.submit "Add the lesson to #{current_section.title}", class: 'btn btn-warning' %>
     <br /><br />
   <% end %>
 </div>

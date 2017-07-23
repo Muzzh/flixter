@@ -44,6 +44,8 @@ gem 'simple_form'
 gem 'carrierwave', '~> 1.0'
 # gem to handle ImageMagick
 gem 'mini_magick'
+
+gem 'carrierwave-aws'
 # devise gem https://github.com/plataformatec/devise
 gem 'devise'
 
