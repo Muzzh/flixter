@@ -6,6 +6,12 @@ class User < ApplicationRecord
 
   attr_accessor :login
   has_many :courses
+  has_many :enrollments
+  has_many :enrolled_courses, through: :enrollments, source: :course
+
+  def enrolled_in?(course)
+    return enrolled_courses.include?(course)
+  end
 
   validates :email, presence: true, uniqueness: true
   validates_format_of :email, :with => Devise::email_regexp
