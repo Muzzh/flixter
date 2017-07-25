@@ -48,6 +48,8 @@ gem 'mini_magick'
 gem 'carrierwave-aws'
 # devise gem https://github.com/plataformatec/devise
 gem 'devise'
+# stripe https://stripe.com/docs/checkout/rails
+gem 'stripe'
 
 source 'https://rails-assets.org' do
   gem 'rails-assets-tether', '>= 1.3.3'
