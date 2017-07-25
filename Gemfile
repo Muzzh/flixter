@@ -50,6 +50,8 @@ gem 'carrierwave-aws'
 gem 'devise'
 # stripe https://stripe.com/docs/checkout/rails
 gem 'stripe'
+# gem used for ordering of lessons https://github.com/mixonic/ranked-model
+gem 'ranked-model'
 
 source 'https://rails-assets.org' do
   gem 'rails-assets-tether', '>= 1.3.3'
