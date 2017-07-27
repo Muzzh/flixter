@@ -3,4 +3,8 @@ class Section < ApplicationRecord
   has_many :lessons
 
   validates :title, presence: true, length: { minimum: 5, maximum: 30 }
+
+  include RankedModel
+
+  ranks :row_order, with_same: :course_id
 end
