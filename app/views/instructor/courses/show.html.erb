@@ -39,7 +39,7 @@
     <%= link_to 'Add a new section...', new_instructor_course_section_path(current_course), class: 'btn btn-warning btn-lg' %>
   </div>
   <br />
-  <ul class="sections">
+  <ul class="sections grabbable">
     <% current_course.sections.rank(:row_order).each do |section| %>
       <li data-update-url="<%= instructor_section_path(section) %>" class="section-li">
         <div class="header">
@@ -47,7 +47,7 @@
           &nbsp <%= section.title %>
           <%= link_to 'New Lesson', new_instructor_section_lesson_path(section), class: 'float-right btn btn-warning btn-sm' %>
         </div>
-        <ul class="lessons">
+        <ul class="lessons grabbable">
           <% section.lessons.rank(:row_order).each do |lesson| %>
             <li data-update-url="<%= instructor_lesson_path(lesson) %>">
               <% if lesson.video.present? %>
