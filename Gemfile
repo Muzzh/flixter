@@ -34,6 +34,8 @@ gem 'jbuilder', '~> 2.5'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
+# font-awesome-gem https://github.com/bokmann/font-awesome-rails
+gem 'font-awesome-rails'
 # fog gem for AWS 
 gem 'fog-aws'
 # Bootstrap https://github.com/twbs/bootstrap-rubygem

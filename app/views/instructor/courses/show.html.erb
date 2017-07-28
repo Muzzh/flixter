@@ -41,13 +41,20 @@
   <br />
   <ul class="sections">
     <% current_course.sections.rank(:row_order).each do |section| %>
-      <li data-update-url="<%= instructor_section_path(section) %>">
-        <%= section.row_order %>
-        <%= section.title %>
-        <%= link_to 'New Lesson', new_instructor_section_lesson_path(section), class: 'float-right btn btn-warning btn-sm' %>
+      <li data-update-url="<%= instructor_section_path(section) %>" class="section-li">
+        <div class="header">
+          <span class="fa fa-folder" aria-hidden="true"></span>
+          &nbsp <%= section.title %>
+          <%= link_to 'New Lesson', new_instructor_section_lesson_path(section), class: 'float-right btn btn-warning btn-sm' %>
+        </div>
         <ul class="lessons">
           <% section.lessons.rank(:row_order).each do |lesson| %>
             <li data-update-url="<%= instructor_lesson_path(lesson) %>">
+              <% if lesson.video.present? %>
+                <span class="fa fa-file-video-o" aria-hidden="true"></span>
+              <% else %>
+                <span class="fa fa-file-word-o" aria-hidden="true"></span>
+              <% end %> &nbsp
               <b><%= lesson.title %></b>
               -
               <%= lesson.subtitle %>

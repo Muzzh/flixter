@@ -3,7 +3,7 @@ class Lesson < ApplicationRecord
   mount_uploader :video, VideoUploader
 
   validates :title, presence: true, length: { minimum: 5, maximum: 30 }
-  validates :subtitle, presence: true, length: { minimum: 5, maximum: 30}
+  validates :subtitle, presence: true, length: { minimum: 5, maximum: 50}
   
   include RankedModel
 

@@ -1,4 +1,5 @@
 @import "bootstrap";
+@import "font-awesome";
 @import url('https://fonts.googleapis.com/css?family=Corben|Fondamento|Headland+One|Metamorphous|Mr+De+Haviland|Oleo+Script+Swash+Caps|Qwigley');
 /*font-family: 'Oleo Script Swash Caps', cursive;
 font-family: 'Mr De Haviland', cursive;
@@ -23,6 +24,12 @@ h1, h2, h3, h4, h5, h6, .navbar {
 }
 ul.sections li {
   text-align: left;
+}
+ul {
+  list-style-type: none;
+}
+ul .header {
+  font-size: 20px;
 }
 
 .navbar {
@@ -90,9 +97,19 @@ ul.sections li {
   border-color: #e4e4e4 #bebebd #bebebd #e4e4e4;
   padding: 10px;
 }
+.section-li {
+  border: 1px solid;
+  border-color: #e4e4e4 #bebebd #bebebd #e4e4e4;
+  padding: 10px;
+}
 .lesson {
   background-color: #83C45A;
   padding-top: 5px;
+}
+.lessons li {
+  background: #5CD0F7;
+  padding-left: 5px;
+  margin: 5px;
 }
 .lesson a{
   color: white;
