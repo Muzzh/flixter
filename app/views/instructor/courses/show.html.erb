@@ -1,6 +1,6 @@
 <script>
   $(function() {
-    $('.new-lesson-button').click(function() {
+    $('.new-lesson-button').click(function(event) {
       var sectionTitle = $(event.target).data('section-title');
       $('#newLessonButton').val("Add the lesson to " + sectionTitle);
       var lessonUrl = $(event.target).data('lesson-url');
