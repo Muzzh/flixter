@@ -24,7 +24,7 @@
   <h1>Courses I'm Teaching</h1>
   <% current_user.courses.each do |course| %>
     <h3 class="text-center">
-      <%= link_to course.title, course_path(course) %>
+      <%= link_to course.title, instructor_course_path(course) %>
     </h3>
     <br />
     <%= image_tag course.image, class: 'img-fluid' %>
@@ -33,7 +33,7 @@
         <%= course.description %>
       </div>
       <div class="col-12 col-md-4 text-center">
-        <%= link_to "Modify Course", course_path(course), class: 'btn btn-lg btn-danger' %>
+        <%= link_to "Modify Course", instructor_course_path(course), class: 'btn btn-lg btn-danger' %>
       </div>
     </div>
     <br />
