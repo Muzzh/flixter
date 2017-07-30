@@ -41,10 +41,6 @@
               </li>
             <% end %>
           </ul>
-          <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="text" placeholder="Search">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-          </form>
         </div>
       </nav>
       <% if notice.present? %>
@@ -68,11 +64,9 @@
           <div class="col-12 col-sm-3">
             <b>About</b>
             <br />
-            <%= link_to 'Team', '#' %>
+            <%= link_to 'Project', project_path %>
             <br />
-            <%= link_to 'Careers', '#' %>
-            <br />
-            <%= link_to 'Privacy Policy' %>
+            <%= link_to 'Privacy Policy', privacy_path %>
           </div>
           <div class="col-12 col-sm-3">
             <b>Contact</b>
@@ -80,21 +74,21 @@
             Xavier Vanier <br />
             murdyn@gmail.com
             <br />
-            <%= link_to 'Portfolio', '#' %>
+            <%= link_to 'Portfolio', 'http://xaviervanier.getforge.io/index.html', target: :_blank %>
           </div>
           <div class="col-12 col-sm-3 social">
             <b>Social</b>
             <br />
-            <%= link_to 'https://github.com/Muzzh' do %>
+            <%= link_to 'https://github.com/Muzzh', target: :_blank do %>
               <span class="fa fa-github-square fa-2x social-button"></span>
             <% end %>
             <br />
             Share this page!
             <br />
-            <%= link_to 'http://www.facebook.com/sharer.php?u=https://flixter-xavier-vanier.herokuapp.com/' do %>
+            <%= link_to 'http://www.facebook.com/sharer.php?u=https://flixter-xavier-vanier.herokuapp.com/', target: :_blank do %>
               <span class="fa fa-facebook-square fa-2x social-button"></span>
             <% end %>
-            <%= link_to 'http://twitter.com/share?url=https://flixter-xavier-vanier.herokuapp.com/' do %>
+            <%= link_to 'http://twitter.com/share?url=https://flixter-xavier-vanier.herokuapp.com/', target: :_blank do %>
               <span class="fa fa-twitter-square fa-2x social-button"></span>
             <% end %>
           </div>

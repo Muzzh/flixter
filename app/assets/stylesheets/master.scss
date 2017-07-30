@@ -128,20 +128,27 @@ ul .header {
   padding: 2px 8px 2px 8px;
   margin: 10px;
 }
+.lesson-container {
+  display: flex;
+}
+.lesson-container > div {
+  flex: 1;
+}
 .grabbable {
     cursor: grab;
     cursor: move; /* fallback if grab cursor is unsupported */
     cursor: -moz-grab;
     cursor: -webkit-grab;
 }
-
  /* (Optional) Apply a "closed-hand" cursor during drag operation. */
 .grabbable:active { 
     cursor: grabbing;
     cursor: -moz-grabbing;
     cursor: -webkit-grabbing;
 }
-
+.privacy h2 {
+  text-align: center;
+}
 .clr {
   clear: both;
 }
