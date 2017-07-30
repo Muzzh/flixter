@@ -57,9 +57,48 @@
     </div>
     <div id="footer">
       <div class="container">
-        <b>Instructors</b>
-        <br />
-        <%= link_to 'Teach a Course', new_instructor_course_path %>
+        <div class="row">
+          <div class="col-12 col-sm-3">
+            <b>Instructors</b>
+            <br />
+            <%= link_to 'Teach a Course', new_instructor_course_path %>
+            <br />
+            <%= link_to 'My Dashboard', dashboard_path %>
+          </div>
+          <div class="col-12 col-sm-3">
+            <b>About</b>
+            <br />
+            <%= link_to 'Team', '#' %>
+            <br />
+            <%= link_to 'Careers', '#' %>
+            <br />
+            <%= link_to 'Privacy Policy' %>
+          </div>
+          <div class="col-12 col-sm-3">
+            <b>Contact</b>
+            <br />
+            Xavier Vanier <br />
+            murdyn@gmail.com
+            <br />
+            <%= link_to 'Portfolio', '#' %>
+          </div>
+          <div class="col-12 col-sm-3 social">
+            <b>Social</b>
+            <br />
+            <%= link_to 'https://github.com/Muzzh' do %>
+              <span class="fa fa-github-square fa-2x social-button"></span>
+            <% end %>
+            <br />
+            Share this page!
+            <br />
+            <%= link_to 'http://www.facebook.com/sharer.php?u=https://flixter-xavier-vanier.herokuapp.com/' do %>
+              <span class="fa fa-facebook-square fa-2x social-button"></span>
+            <% end %>
+            <%= link_to 'http://twitter.com/share?url=https://flixter-xavier-vanier.herokuapp.com/' do %>
+              <span class="fa fa-twitter-square fa-2x social-button"></span>
+            <% end %>
+          </div>
+        </div>
       </div>
     </div>
     <script src="http://vjs.zencdn.net/6.2.0/video.js"></script>

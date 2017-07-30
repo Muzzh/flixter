@@ -8,6 +8,13 @@ body {
   flex-direction: column;
 }
 
+.social-button {
+  margin: 4px;
+}
+.social a:hover {
+  text-decoration: none;
+}
+
 #flex-content-container {
   flex: 1;
 }
@@ -20,11 +27,17 @@ body {
   font-family: 'Audiowide', cursive;
   background-color: #245400;
   color: white;
-  font-weight: 200;
+  font-weight: 100;
+  font-size: 75%;
   padding: 10px 0px;
   margin-top: 30px;
 }
 #footer a {
   color: white;
-  font-weight: 150;
+  font-weight: 100;
+}
+#footer b {
+  text-decoration: underline;
+  font-weight: 200;
+  font-size: 125%;
 }
