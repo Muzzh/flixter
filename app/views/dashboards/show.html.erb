@@ -1,9 +1,9 @@
 <br />
 
 <div class="sign-box col-10 offset-1">
-  <h1>Enrolled Couses</h1>
+  <h1 class="mobile-tag">Enrolled Couses</h1>
   <% current_user.enrolled_courses.each do |course| %>
-    <h3 class="text-center">
+    <h3 class="text-center mobile-tag">
       <%= link_to course.title, course_path(course) %>
     </h3>
     <br />
@@ -21,9 +21,9 @@
     <br class="clr" />
   <% end %>
 
-  <h1>Courses I'm Teaching</h1>
+  <h1 class="mobile-tag">Courses I'm Teaching</h1>
   <% current_user.courses.each do |course| %>
-    <h3 class="text-center">
+    <h3 class="text-center mobile-tag">
       <%= link_to course.title, instructor_course_path(course) %>
     </h3>
     <br />
